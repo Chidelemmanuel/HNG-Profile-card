@@ -9,8 +9,8 @@ The component displays a user’s name, bio, avatar, hobbies, dislikes, social l
 
 ## Live 
 
- GitHub Repository: [https://owens01.github.io/profile-card-frontend/
-](https://owens01.github.io/profile-card-frontend/
+ GitHub Repository: [https://chidelemmanuel.github.io/HNG-Profile-card
+](https://chidelemmanuel.github.io/HNG-Profile-card/
 )
 
 ---
