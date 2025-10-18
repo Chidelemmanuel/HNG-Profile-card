@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Default avatar">
+  <rect width="160" height="160" rx="12" fill="#eef2ff"/>
+  <g transform="translate(20,20)" fill="#2c5364">
+    <circle cx="60" cy="40" r="30" />
+    <rect x="10" y="82" width="100" height="40" rx="10" />
+  </g>
+</svg>

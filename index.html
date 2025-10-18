@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <main class="container">
+      <!-- Profile Card root container -->
+      <article
+        class="profile-card"
+        data-testid="test-profile-card"
+        aria-labelledby="user-name">
+
+        <header class="profile-header">
+          <!-- Avatar figure -->
+          <figure class="avatar-figure" aria-hidden="false">
+            <img
+              src="assets/default-avatar.svg"
+              alt="User avatar"
+              id="userAvatar"
+              data-testid="test-user-avatar"
+              width="160"
+              height="160"
+            />
+            <figcaption class="visually-hidden">User avatar</figcaption>
+          </figure>
+
+            <h1 id="user-name" data-testid="test-user-name">
+              Emmanuel Ozochi
+            </h1>
+            <p class="bio" data-testid="test-user-bio">
+              I’m a frontend engineer with a solid grasp of HTML, CSS, JavaScript (ES6+), and React. I enjoy building clean,
+              responsive, and user-friendly interfaces. I focus on writing maintainable code, improving performance, and
+              staying current with modern frontend trends. I’m excited to contribute to teams that value great design and
+              thoughtful development.
+            </p> 
+
+            <div class="avatar-controls">
+            <label class="btn" for="avatarFileInput">
+              Upload image
+              <input
+                id="avatarFileInput"
+                type="file"
+                accept="image/*"
+                aria-label="Upload avatar file"
+              />
+            </label>
+
+            <label class="url-input">
+              <span class="label-text">Image URL</span>
+              <input
+                id="avatarUrlInput"
+                type="url"
+                placeholder="https://example.com/photo.jpg"
+                aria-label="Avatar image URL"/>
+            </label>
+
+            <button id="avatarApplyUrl" class="btn" type="button">
+              Apply URL
+            </button>
+          <div> 
+          </div>
+
+        </div>
+
+        </header>
+
+        <div class="profile-meta"> 
+          
+          <aside class="profile-lists">
+             <p class="time" aria-live="polite">
+              Current time (ms):
+              <strong id="userTime" data-testid="test-user-time"></strong>
+            </p>
+
+             <nav aria-label="Social links">
+              <ul class="social-links" data-testid="test-user-social-links">
+                <li>
+                  <a
+                    href="https://x.com/Ozoronebillion"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                </li>
+
+                <li> 
+                  <a
+                    href="https://github.com/Chidelemmanuel"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-github">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/emmanuel-ozochi-45b835247/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="test-user-social-linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <section aria-labelledby="hobbies-heading" data-testid="test-user-hobbies" class="list-section">
+              <span class="pack">
+                <i id="heading" class="fa-solid fa-thumbs-up hobbies"></i>
+                <p id="heading" class="hobbies">Hobbies</p>
+             </span>
+
+              <ul class="likes-list">
+                <li>Coding</li>
+                <li>Watching Movies</li>
+                <li>Cooking</li>
+              </ul>
+  
+             <br>
+             <br>
+
+              <span class="pack">
+                <i id="heading" class="fa-solid fa-thumbs-down dislikes"></i>
+                <p id="heading" class="dislikes">Dislikes</p>
+              </span>
+
+              <ul class="dislikes-list">
+                <li>Slow internet</li>
+                <li>Vague or unhelpful responses</li>
+                <li>Slow progress</li>
+              </ul>
+            </section>
+          </aside>
+        </div>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
