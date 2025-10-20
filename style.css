@@ -246,6 +246,10 @@ input:focus {
   .profile-card {
     flex-direction: column;
   }
+
+  .navigation {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 760px) {
