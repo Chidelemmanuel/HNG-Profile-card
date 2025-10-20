@@ -20,22 +20,32 @@
             </div>
         </nav>
 
-        <h1>Contact Us</h1>
-        <p>Have a question or want to work together? Fill out the form below.</p>
-        
+        <section data-testid="test-contact-intro" class="intro">
+            <h1 id="heading">Contact Us</h1>
+            <p>Have a question or want to work together? Fill out the form below.</p>
+        </section>
+
         <div class="details" data-testid="test-contact-form">
-            <h3>Send a Message</h3>
+            <h3 id="heading">Send a Message</h3>
 
             <section>
                 <label for="">Full Name</label>
-                <input type="text" data-testid="test-contact-name">
+                <input type="text" data-testid="test-contact-name" placeholder="John Doe">
+                <br>
+                <br>
                 <label for="">Email</label>
-                <input type="email" name="" id="" test-contact-email>
+                <input type="email" name="" id="" data-testid="test-contact-email" placeholder="john.doe@example.com">
+                <br>
+                <br>
                 <label for="">Subject</label>
-                <input type="text" name="" id="" data-testid="test-contact-subject">
+                <input type="text" name="" id="" data-testid="test-contact-subject" placeholder="Regarding your project...">
+                <br>
+                <br>    
                 <label for="">Message</label>
-                <textarea name="" id="" data-testid="test-contact-message" minlength="10"></textarea>
-                <button type="submit" test-contact-submit>Submit</button>
+                <textarea name="" id="" data-testid="test-contact-message" minlength="10" placeholder="Your message here..."></textarea>
+                <br>        
+                <br>
+                <button type="submit" test-contact-submit id="btn">Submit</button>
             </section>
         </div>
 
