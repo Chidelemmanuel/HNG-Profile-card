@@ -9,6 +9,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 24px;
+  background: #d9dadd;
 }
 
 .contact-us {
@@ -66,6 +67,12 @@ h2 {
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.6;
+}
+
+h3 {
+    font-size: 22px;
+    color: #62cbee;
+    margin: 15px auto 40px auto;
 }
 
 p {
