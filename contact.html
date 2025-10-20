@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="contact.css">
     <title>Contact Us</title>
 </head>
@@ -35,17 +36,27 @@
                 <br>
                 <label for="">Email</label>
                 <input type="email" name="" id="" data-testid="test-contact-email" placeholder="john.doe@example.com">
+                <p class="error-message">Enter a valid email (name@example.com).</p>
                 <br>
                 <br>
                 <label for="">Subject</label>
                 <input type="text" name="" id="" data-testid="test-contact-subject" placeholder="Regarding your project...">
                 <br>
                 <br>    
+                <!-- the message text muxt be red also for error -->
                 <label for="">Message</label>
                 <textarea name="" id="" data-testid="test-contact-message" minlength="10" placeholder="Your message here..."></textarea>
+                <p class="error-message">Message must be at least 10 characters.</p>
                 <br>        
                 <br>
                 <button type="submit" test-contact-submit id="btn">Submit</button>
+                <span>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p class="validation-message">
+                        Success!
+                        Your message has been sent successfully. We'll get back to you soon.
+                    </p>
+                </span>
             </section>
         </div>
 

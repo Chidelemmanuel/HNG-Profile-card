@@ -118,3 +118,16 @@ input, textarea {
     width: 100%;
     margin-top: 12px;
 }
+
+.error-message {
+    color: #ff4d4f;
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.validation-message, i  {
+    display: flex;
+    color: #4BB543;
+    margin-top: 8px;
+    font-size: 18px;
+}
