@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  /* min-height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.about-profile {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 6px 18px rgba(19, 24, 33, 0.06);
+    background-color: #0f172a;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.navigation {
+  display: flex;
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+}  
+
+.navigation li {
+  display: inline;
+  margin: 5px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.navigation li a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navigation li a:hover {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #fff;
+}
+
+.bio, .goals, .areas, .future, .extra {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+h3 {
+    margin: 20px 0 20px 0px;
+    font-size: 30px;
+    color: #62cbee;
+}
+
+.goals ul {
+    padding: 0 20px;
+}
+
+.goals ul li::marker {
+    color:  #62cbee;
+}
+
+p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+ul li {
+    color: #ccc;
+}
