@@ -7,6 +7,38 @@
     <title>Contact Us</title>
 </head>
 <body>
-    
+    <main data-testid="test-contact-page" class="contact-us">
+        <nav>
+            <h2>Contact Us</h2>
+
+            <div data-testid="navigation" class="navigation">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1>Contact Us</h1>
+        <p>Have a question or want to work together? Fill out the form below.</p>
+        
+        <div class="details" data-testid="test-contact-form">
+            <h3>Send a Message</h3>
+
+            <section>
+                <label for="">Full Name</label>
+                <input type="text" data-testid="test-contact-name">
+                <label for="">Email</label>
+                <input type="email" name="" id="" test-contact-email>
+                <label for="">Subject</label>
+                <input type="text" name="" id="" data-testid="test-contact-subject">
+                <label for="">Message</label>
+                <textarea name="" id="" data-testid="test-contact-message" minlength="10"></textarea>
+                <button type="submit" test-contact-submit>Submit</button>
+            </section>
+        </div>
+
+    </main>
 </body>
 </html>
