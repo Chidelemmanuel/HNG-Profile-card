@@ -116,7 +116,7 @@ btn.addEventListener("click", (e) => {
   } else {
     messageError.style.display = "none";  
   } 
-  
+
   // Show confirmation if no errors
   if (nameInput.value.trim() && subjectInput.value.trim() && emailError.style.display === "none" && messageError.style.display === "none") {
     confirmationMessage.style.display = "block";
@@ -133,7 +133,7 @@ btn.addEventListener("click", (e) => {
     }, 3000); // hides after 3 seconds
   
   } else {
-    alert ("Please correct the errors in the form before submitting.");
+    alert ("Please fill in all inputs in the form before submitting.");
     // confirmationMessage.style.display = "none"; // hide success if invalid
   }   
 });
