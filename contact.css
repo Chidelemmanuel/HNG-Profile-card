@@ -119,7 +119,7 @@ input, textarea {
     margin-top: 12px;
 }
 
-.error-message {
+.error-message, #message-error {
     color: #ff4d4f;
     margin-top: 8px;
     font-size: 18px;

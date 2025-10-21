@@ -82,3 +82,58 @@
     }
   });
 })();
+
+
+// contact form validation
+
+const nameInput = document.querySelector("#inputName");
+const emailInput = document.querySelector("#email");
+const subjectInput = document.querySelector("#Subject"); 
+const messageInput = document.querySelector("#message"); 
+const btn = document.querySelector("#btn");
+const emailError = document.querySelector(".error-message");
+const messageError = document.querySelector("#message-error"); 
+const confirmationMessage = document.querySelector(".validation-message");
+
+confirmationMessage.style.display = "none";
+emailError.style.display = "none";
+messageError.style.display = "none";
+
+
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  
+  // Email Validation
+  if (emailInput.value.trim().includes("@")) {
+    emailError.style.display = "none"; 
+  } else {
+    emailError.style.display = "block";
+  }
+
+  // Message Validation
+ if (messageInput.value.trim().length < 10) {
+    messageError.style.display = "block"; 
+  } else {
+    messageError.style.display = "none";  
+  } 
+  
+  // Show confirmation if no errors
+  if (nameInput.value.trim() && subjectInput.value.trim() && emailError.style.display === "none" && messageError.style.display === "none") {
+    confirmationMessage.style.display = "block";
+
+    // Clear the input fields after success
+    nameInput.value = "";
+    emailInput.value = "";
+    messageInput.value = "";
+    subjectInput.value = "";
+
+    // Optional: hide the success message after a few seconds
+    setTimeout(() => {
+      confirmationMessage.style.display = "none";
+    }, 3000); // hides after 3 seconds
+  
+  } else {
+    alert ("Please correct the errors in the form before submitting.");
+    // confirmationMessage.style.display = "none"; // hide success if invalid
+  }   
+});

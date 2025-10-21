@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="contact.css">
-    <title>Contact Us</title>
+    <title>HNG Profile Card</title>
 </head>
 <body>
     <main data-testid="test-contact-page" class="contact-us">
@@ -29,37 +29,34 @@
         <div class="details" data-testid="test-contact-form">
             <h3>Send a Message</h3>
 
-            <section>
+            <form>
                 <label for="">Full Name</label>
-                <input type="text" data-testid="test-contact-name" placeholder="John Doe">
+                <input type="text" data-testid="test-contact-name" placeholder="John Doe" id="inputName">
                 <br>
                 <br>
                 <label for="">Email</label>
-                <input type="email" name="" id="" data-testid="test-contact-email" placeholder="john.doe@example.com">
+                <input type="email" name="" id="email" data-testid="test-contact-email" placeholder="john.doe@example.com">
                 <p class="error-message">Enter a valid email (name@example.com).</p>
                 <br>
                 <br>
                 <label for="">Subject</label>
-                <input type="text" name="" id="" data-testid="test-contact-subject" placeholder="Regarding your project...">
+                <input type="text" name="" id="Subject" data-testid="test-contact-subject" placeholder="Regarding your project...">
                 <br>
                 <br>    
-                <!-- the message text muxt be red also for error -->
                 <label for="">Message</label>
-                <textarea name="" id="" data-testid="test-contact-message" minlength="10" placeholder="Your message here..."></textarea>
-                <p class="error-message">Message must be at least 10 characters.</p>
+                <textarea name="" id="message" data-testid="test-contact-message" minlength="10" placeholder="Your message here..."></textarea>
+                <p id="message-error">Message must be at least 10 characters.</p>
                 <br>        
                 <br>
                 <button type="submit" test-contact-submit id="btn">Submit</button>
-                <span>
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p class="validation-message">
-                        Success!
-                        Your message has been sent successfully. We'll get back to you soon.
-                    </p>
-                </span>
-            </section>
+                <p class="validation-message">
+                    Success!
+                    Your message has been sent successfully. We'll get back to you soon.
+                </p>
+            </form>
         </div>
 
+        <script src="script.js"></script>
     </main>
 </body>
 </html>
